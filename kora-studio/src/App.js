@@ -1,9 +1,11 @@
 import MuiButton from './Components/MuiButton/MuiButton'
+import MuiComment from './Components/MuiComment/MuiComment'
 
 function App() {
   return (
     <div>
-      <MuiButton />
+      <MuiButton/>
+      <MuiComment/>
     </div>
   );
 }
