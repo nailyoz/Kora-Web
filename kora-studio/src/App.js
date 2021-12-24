@@ -1,5 +1,5 @@
-import MuiButton from './Components/MuiButton/MuiButton'
-import MuiComment from './Components/MuiComment/MuiComment'
+// import MuiButton from './Components/MuiButton/MuiButton'
+// import MuiComment from './Components/MuiComment/MuiComment'
 import Carrousel from './Components/Carrousel/Carrousel'
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
     <div>
       {/* <MuiButton/>
       <MuiComment/> */}
-      <Carrousel/>
+      <Carrousel />
     </div>
   );
 }

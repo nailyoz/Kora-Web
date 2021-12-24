@@ -3,40 +3,24 @@ import { Carousel } from 'react-carousel-minimal';
 export default function Carrousel(){
      const data = [
           {
-               image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/GoldenGateBridge-001.jpg/1200px-GoldenGateBridge-001.jpg",
-               caption: "San Francisco"
+               image: "https://www.segs.com.br/media/k2/items/cache/56318238b8a583a4f3c010bffcdd05b8_XL.jpg",
+               caption: "Dance 1"
           },
           {
-               image: "https://cdn.britannica.com/s:800x450,c:crop/35/204435-138-2F2B745A/Time-lapse-hyper-lapse-Isle-Skye-Scotland.jpg",
-               caption: "Scotland"
+               image: "https://theatromunicipal.org.br/wp-content/uploads/2019/07/60A4992-11.jpg",
+               caption: "Dance 2"
           },
           {
-               image: "https://static2.tripoto.com/media/filter/tst/img/735873/TripDocument/1537686560_1537686557954.jpg",
-               caption: "Darjeeling"
+               image: "https://4.bp.blogspot.com/-GHk6npKhBTM/Vma2kqnUrJI/AAAAAAAAAnE/cSJsmFjy0ek/s1600/1417120172estreia_quebra_nozes__credito_cleber_gomes_%25288%2529.jpg",
+               caption: "Dance 3"
           },
           {
-               image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Palace_of_Fine_Arts_%2816794p%29.jpg/1200px-Palace_of_Fine_Arts_%2816794p%29.jpg",
-               caption: "San Francisco"
+               image: "https://upload.wikimedia.org/wikipedia/commons/f/fc/B-boy_breakdancing.jpg",
+               caption: "Dance 4"
           },
           {
-               image: "https://i.natgeofe.com/n/f7732389-a045-402c-bf39-cb4eda39e786/scotland_travel_4x3.jpg",
-               caption: "Scotland"
-          },
-          {
-               image: "https://www.tusktravel.com/blog/wp-content/uploads/2020/07/Best-Time-to-Visit-Darjeeling-for-Honeymoon.jpg",
-               caption: "Darjeeling"
-          },
-          {
-               image: "https://www.omm.com/~/media/images/site/locations/san_francisco_780x520px.ashx",
-               caption: "San Francisco"
-          },
-          {
-               image: "https://images.ctfassets.net/bth3mlrehms2/6Ypj2Qd3m3jQk6ygmpsNAM/61d2f8cb9f939beed918971b9bc59bcd/Scotland.jpg?w=750&h=422&fl=progressive&q=50&fm=jpg",
-               caption: "Scotland"
-          },
-          {
-               image: "https://www.oyorooms.com/travel-guide/wp-content/uploads/2019/02/summer-7.jpg",
-               caption: "Darjeeling"
+               image: "https://www.sescpr.com.br/wp-content/uploads/2019/04/iStock-827891858.jpg",
+               caption: "Dance 5"
           }
      ];
 
@@ -51,8 +35,6 @@ export default function Carrousel(){
      return (
           <div className="App">
                <div style={{ textAlign: "center" }}>
-                    <h2>React Carousel Minimal</h2>
-                    <p>Easy to use, responsive and customizable carousel component for React Projects.</p>
                     <div style={{
                          padding: "0 20px"
                     }}>
