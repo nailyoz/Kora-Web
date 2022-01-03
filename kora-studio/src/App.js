@@ -1,13 +1,10 @@
-// import MuiButton from './Components/MuiButton/MuiButton'
-// import MuiComment from './Components/MuiComment/MuiComment'
-import Carrousel from './Components/Carrousel/Carrousel'
+// import { Router, Route } from 'react-router-dom';
+import { Rodape } from './Components/Rodape/Rodape';
 
 function App() {
   return (
     <div>
-      {/* <MuiButton/>
-      <MuiComment/> */}
-      <Carrousel />
+      <Rodape></Rodape>
     </div>
   );
 }

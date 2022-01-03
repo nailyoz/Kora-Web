@@ -15,12 +15,8 @@ export default function Carrousel(){
                caption: "Dance 3"
           },
           {
-               image: "https://upload.wikimedia.org/wikipedia/commons/f/fc/B-boy_breakdancing.jpg",
-               caption: "Dance 4"
-          },
-          {
                image: "https://www.sescpr.com.br/wp-content/uploads/2019/04/iStock-827891858.jpg",
-               caption: "Dance 5"
+               caption: "Dance 4"
           }
      ];
 
@@ -40,7 +36,7 @@ export default function Carrousel(){
                     }}>
                          <Carousel
                               data={data}
-                              time={2000}
+                              time={3000}
                               width="850px"
                               height="500px"
                               captionStyle={captionStyle}
@@ -50,7 +46,7 @@ export default function Carrousel(){
                               captionPosition="bottom"
                               automatic={true}
                               dots={true}
-                              pauseIconColor="white"
+                              pauseIconColor="darkgrey"
                               pauseIconSize="40px"
                               slideBackgroundColor="darkgrey"
                               slideImageFit="cover"
