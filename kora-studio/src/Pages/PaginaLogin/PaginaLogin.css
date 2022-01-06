@@ -1,0 +1,116 @@
+.container {
+    display: flex;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.inputlogin {
+    margin-bottom: 10px;
+    width: 200px;
+    height: 40px; 
+    text-align: center;
+    border: none;
+    border-radius: 50px; 
+    outline: none;
+}
+
+.inputsenha {
+    margin-bottom: 10px;
+    width: 200px;
+    height: 40px; 
+    text-align: center;
+    border: none;
+    border-radius: 50px;
+    outline: none;
+}
+
+.paginalogin { 
+    background-image: url("./login.jpg");
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    height: 100vh;
+    background-size: cover;
+}
+
+.titulo {
+    color: white;
+    font-size: 30px;
+}
+
+.botaoentrar {
+    margin-top: 6px;
+    margin-bottom: 10px;
+    width: 40%;
+    color: white;
+    background-color: #5a0089ff;
+    text-decoration: none;
+    border: none;
+    border-radius: 30px;
+    font-size: 20px;
+    font-family: GilroyBold;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    transition: 0.5s;
+}
+
+.botaoentrar:hover {
+    color: white;
+    background-color: #5a0089ff;  
+}
+
+.botaoregistrar {
+    margin-top: 6px;
+    margin-bottom: 10px;
+    width: 200px;
+    color: #5a0089ff;
+    background-color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 30px;
+    font-size: 20px;
+    font-family: GilroyBold;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.botaoregistrar:hover {
+    color: white;
+    background-color: #5a0089ff;  
+}
+
+.botaosenha {
+    margin-top: 6px;
+    margin-bottom: 10px;
+    width: 200px;
+    color: white;
+    background-color: #5a0089ff;
+    opacity: 0.7;
+    text-decoration: none;
+    border: none;
+    border-radius: 30px;
+    font-size: 20px;
+    font-family: GilroyBold;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    transition: 0.5s;
+    text-align: center;
+    font-size: 15px;
+}
+
+.botaosenha:hover {
+    opacity: 1;
+}
