@@ -1,0 +1,130 @@
+/* ESTILO DO FORMULÁRIO */
+
+.container {
+    display: flex;
+}
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container h3 {
+    font-size: 16px;
+    font-weight:lighter;
+    color: white;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.email {
+    width: 200px;
+    height: 40px; 
+    text-align: center;
+    border: none;
+    border-radius: 50px; 
+    outline: none;
+    font-size: 12px;
+
+}
+
+.senha {
+    width: 200px;
+    height: 40px; 
+    text-align: center;
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    font-size: 12px;
+}
+
+.btn-login {
+    width: 100px;
+    color: white;
+    background-color: #5a0089ff;
+    text-decoration: none;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-family: GilroyBold;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    transition: 0.5s;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-login:hover {
+    color: white;
+    background-color:rgb(50, 0, 77);  
+}
+
+/* COMPONENTE PÁGINA LOGIN */
+
+.paginalogin { 
+    background-image: url("./login.jpg");
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    height: 100vh;
+    background-size: cover;
+    background-position: 100% 35%;
+}
+
+.titulo {
+    color: white;
+    font-size: 30px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.btn-registrar {
+    margin-top: 6px;
+    width: 100px;
+    color: #5a0089ff;
+    background-color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-family: GilroyBold;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    transition: 0.5s;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-registrar:hover {
+    color: white;
+    background-color: #5a0089ff;  
+}
+
+
+.btn-senha {
+    margin-top: 6px;
+    width: 170px;
+    color: white;
+    background-color: #5a0089ff;
+    opacity: 0.7;
+    text-decoration: none;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-family: GilroyBold;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    transition: 0.5s;
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-senha:hover {
+    opacity: 1;
+    color: white;
+}
