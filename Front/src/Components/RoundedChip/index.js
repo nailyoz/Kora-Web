@@ -1,38 +1,28 @@
 import React from "react";
-import { styled, Typography, Avatar } from "@mui/material";
+import { Typography } from "@mui/material";
 
-const CustomAvatar = styled("Avatar")(() => ({
-  width: "250px",
-  height: "250px",
-  borderRadius: "250px",
-  backgroundColor: "#FF2500",
-}));
-
+// Waiting recive props.imgSource and text
 export function RoundedChip(props) {
   return (
     <div
       style={{
-        width: "300px",
-        height: "380px",
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
-        margin: "20px",
+        padding: "16px",
       }}
     >
       <img
         src={props.imgSource}
         alt=""
         style={{
-          width: "250px",
-          height: "250px",
-          borderRadius: "250px",
-          backgroundColor: "#FF2500",
+          width: "200px",
+          height: "200px",
+          borderRadius: "200px",
         }}
       ></img>
-      {/* <CustomAvatar src={props.imgSource} /> */}
-      <Typography variant="h4" align="center" sx={{ marginTop: "5px" }}>
+      <Typography variant="h4" align="center" sx={{ marginTop: "8px" }}>
         {props.text}
       </Typography>
     </div>
