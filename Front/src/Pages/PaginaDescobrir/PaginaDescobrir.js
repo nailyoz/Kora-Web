@@ -74,7 +74,9 @@ const CustomButtom = styled(Button)(({ theme }) => ({
 export function PaginaDescobrir() {
   return (
     <Root>
-      <Menu></Menu>
+      <div style={{ display: "flex", flexDirection: "row" }}>
+        <Menu></Menu>
+      </div>
       <Header>
         <Typography variant="h3" style={{ fontWeight: "bold" }}>
           Descobrir

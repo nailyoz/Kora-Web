@@ -54,7 +54,9 @@ const Box = styled("div")(({ theme }) => ({
 export function PaginaMeuEnvio() {
   return (
     <Root>
-      <Menu></Menu>
+      <div style={{ display: "flex", flexDirection: "row" }}>
+        <Menu></Menu>
+      </div>
       <Header>
         <Typography variant="h3" style={{ fontWeight: "bold" }}>
           Meu Envio
