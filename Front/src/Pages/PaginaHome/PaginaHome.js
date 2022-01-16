@@ -81,7 +81,9 @@ const CustomPaper = styled(Paper)(({ theme }) => ({
 export function PaginaHome() {
   return (
     <Root>
-      <Menu></Menu>
+      <div style={{ display: "flex", flexDirection: "row" }}>
+        <Menu></Menu>
+      </div>
       <Header>
         <Typography variant="h3" style={{ fontWeight: "bold" }}>
           Home

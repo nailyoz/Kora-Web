@@ -5,8 +5,6 @@ import { Rodape } from "../../Components/Rodape/Rodape";
 import marca from "../../shared/img/marca.png";
 
 const Header = styled("div")(() => ({
-  width: "100%",
-  height: "60px",
   display: "flex",
   alignItems: "center",
   justifyContent: "space-between",
