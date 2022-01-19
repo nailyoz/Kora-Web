@@ -26,14 +26,17 @@ function FormularioLogin(){
     };
 
     return (
-        <div className="container">
+        <div className="formulario-container">
             <form className="formulario" onSubmit={handleSubmit(logar)}>
-                <h3>Email:</h3> 
-                <input className="email" type="text" name="email" placeholder="Digite seu email..." {...register('email', { required: true})}/><br/>           
-                <h3>Senha:</h3>
-                <input className="senha" type="password" name="senha" placeholder="Digite sua senha..." {...register('senha', { required: true})}/><br/>
-                <button className="btn-login">Login</button>            
+                <h3 className="sub-titulo">Email:</h3> 
+                <input className="email input" type="text" name="email" placeholder="Digite seu email..." {...register('email', { required: true})}/>           
+                <h3 className="sub-titulo">Senha:</h3>
+                <input className="senha input" type="password" name="senha" placeholder="Digite sua senha..." {...register('senha', { required: true})}/>
+                <button className="btn-login button"> Login </button> 
+                <NavLink className="btn-registrar button" to="/registrar"> Registre-se! </NavLink>
+                <NavLink className="btn-senha" to="/recuperarsenha">Esqueceu sua senha?</NavLink>    
             </form>
+            
         </div>
         
     )
@@ -42,12 +45,12 @@ function FormularioLogin(){
 
 export function PaginaLogin(){
     return(
-        <div className="paginalogin">
+         <div className="paginalogin">
             <h1 className="titulo">Bem-vindo ao Kora!</h1>
             <FormularioLogin></FormularioLogin>
-            <NavLink className="btn-registrar" to="/registrar">Registre-se!</NavLink>
-            <NavLink className="btn-senha" to="/recuperarsenha">Esqueceu sua senha?</NavLink>            
-            <Rodape></Rodape>
+            <div style={{ position: "absolute", bottom: 0, width: "100vw" }}>
+                <Rodape></Rodape>
+            </div>               
         </div> 
     )
 }
