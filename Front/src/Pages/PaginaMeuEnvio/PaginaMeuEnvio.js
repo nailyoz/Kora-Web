@@ -11,6 +11,7 @@ import {
 } from "@mui/material";
 import { Menu } from "../../Components/Menu/Menu";
 import { Rodape } from "../../Components/Rodape/Rodape";
+import  Thumbnail  from "../../Components/Thumbnail/Thumbnail";
 
 const Root = styled("div")(() => ({
   display: "flex",
@@ -58,7 +59,7 @@ export function PaginaMeuEnvio() {
         <Menu></Menu>
       </div>
       <Header>
-        <Typography variant="h3" style={{ fontWeight: "bold" }}>
+        <Typography variant="h4" style={{ fontWeight: "bold", fontFamily: "Gotham",}}>
           Meu Envio
         </Typography>
       </Header>
@@ -74,24 +75,24 @@ export function PaginaMeuEnvio() {
             <Card>
               <CardContent>
                 <img
-                  alt="Fundo Colorido"
+                  alt="Meu Envio"
                   src={
-                    "https://s1.1zoom.me/prev/582/Texture_581784_600x400.jpg"
+                    "https://i.ibb.co/YBwqq1y/unnamed.jpg"
                   }
                   width="600px"
                   height="350px"
                 ></img>
                 <Stack direction="row" spacing={1}>
                   <Chip
-                    label="Nível Básico"
+                    label="Básico"
                     style={{ backgroundColor: "#5A0089", color: "#fff" }}
                   />
                   <Chip
-                    label="Ritmo"
+                    label="Funk"
                     style={{ backgroundColor: "#5AB4FF", color: "#fff" }}
                   />
                   <Chip
-                    label="Professor"
+                    label="May J Lee"
                     style={{ backgroundColor: "#5A58C3", color: "#fff" }}
                   />
                 </Stack>
@@ -101,7 +102,7 @@ export function PaginaMeuEnvio() {
                     style={{
                       fontWeight: "bold",
                       marginBottom: "18px",
-                      fontStyle: "italic",
+                      fontFamily: "Gotham",
                     }}
                   >
                     Abusadamente (Remix) MC Gustta e MC DG | Coreografia por:
@@ -129,10 +130,10 @@ export function PaginaMeuEnvio() {
                       marginLeft: "24px",
                     }}
                   >
-                    <Typography variant="h6" style={{ fontWeight: "bold" }}>
+                    <Typography variant="h6" style={{ fontWeight: "bold", fontFamily: "Outfit", }}>
                       Ana Fontes
                     </Typography>
-                    <Typography variant="h6">
+                    <Typography variant="h6" style={{ fontFamily: "Outfit", }}>
                       Ufa! Suei mas consegui! Adorei a coreografia!! Espero pelo
                       feedback!!
                     </Typography>
@@ -140,7 +141,7 @@ export function PaginaMeuEnvio() {
                 </div>
               </CardContent>
             </Paper>
-            <Typography variant="h4" style={{ fontWeight: "bold" }}>
+            <Typography variant="h6" style={{ fontWeight: "bold", fontFamily: "Gotham" }}>
               Aprimore o passo:
             </Typography>
             <Paper elevation={4}>
@@ -148,7 +149,7 @@ export function PaginaMeuEnvio() {
                 <div style={{ display: "flex", flexDirection: "row" }}>
                   <Avatar
                     src={
-                      "https://ichef.bbci.co.uk/news/640/cpsprodpb/121F5/production/_116092247_foto_01.jpg"
+                      ""
                     }
                     sx={{ width: 70, height: 70 }}
                   ></Avatar>
@@ -160,16 +161,16 @@ export function PaginaMeuEnvio() {
                       marginLeft: "24px",
                     }}
                   >
-                    <Typography variant="h6" style={{ fontWeight: "bold" }}>
+                    <Typography variant="h6" style={{ fontWeight: "bold", fontFamily: "Outfit",  }}>
                       May J Lee
                     </Typography>
-                    <Typography variant="h6">
+                    <Typography variant="h6" style={{ fontFamily: "Outfit",  }}>
                       Incrível Ana! Fico feliz que tenha gostado!
                     </Typography>
-                    <Typography variant="h6">
+                    <Typography variant="h6" style={{ fontFamily: "Outfit",  }}>
                       Você põe bastante força no movimento peitoral do segundo
                       passo, na verdade o passo é uma ondulação nas costas,
-                      assim você pederia a energia para o terceiro movimento!
+                      assim você não pederia a energia para o terceiro movimento!
                       Obrigada!!
                     </Typography>
                   </div>
@@ -181,122 +182,10 @@ export function PaginaMeuEnvio() {
         <Box></Box>
         <Belly>
           <Stack direction="column" spacing={2}>
-            <Card>
-              <CardContent>
-                <img
-                  alt="Fundo Colorido"
-                  src={
-                    "https://s1.1zoom.me/prev/582/Texture_581784_600x400.jpg"
-                  }
-                  width="300px"
-                  height="150px"
-                ></img>
-                <Stack direction="row" spacing={1}>
-                  <Chip
-                    label="Nível Básico"
-                    style={{ backgroundColor: "#5A0089", color: "#fff" }}
-                  />
-                  <Chip
-                    label="Ritmo"
-                    style={{ backgroundColor: "#5AB4FF", color: "#fff" }}
-                  />
-                  <Chip
-                    label="Professor"
-                    style={{ backgroundColor: "#5A58C3", color: "#fff" }}
-                  />
-                </Stack>
-                <Typography variant="h6" style={{ paddingTop: "4px" }}>
-                  Música | Coreográfo/Professor
-                </Typography>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardContent>
-                <img
-                  alt="Fundo Colorido"
-                  src={
-                    "https://s1.1zoom.me/prev/582/Texture_581784_600x400.jpg"
-                  }
-                  width="300px"
-                  height="150px"
-                ></img>
-                <Stack direction="row" spacing={1}>
-                  <Chip
-                    label="Nível Básico"
-                    style={{ backgroundColor: "#5A0089", color: "#fff" }}
-                  />
-                  <Chip
-                    label="Ritmo"
-                    style={{ backgroundColor: "#5AB4FF", color: "#fff" }}
-                  />
-                  <Chip
-                    label="Professor"
-                    style={{ backgroundColor: "#5A58C3", color: "#fff" }}
-                  />
-                </Stack>
-                <Typography variant="h6" style={{ paddingTop: "4px" }}>
-                  Música | Coreográfo/Professor
-                </Typography>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardContent>
-                <img
-                  alt="Fundo Colorido"
-                  src={
-                    "https://s1.1zoom.me/prev/582/Texture_581784_600x400.jpg"
-                  }
-                  width="300px"
-                  height="150px"
-                ></img>
-                <Stack direction="row" spacing={1}>
-                  <Chip
-                    label="Nível Básico"
-                    style={{ backgroundColor: "#5A0089", color: "#fff" }}
-                  />
-                  <Chip
-                    label="Ritmo"
-                    style={{ backgroundColor: "#5AB4FF", color: "#fff" }}
-                  />
-                  <Chip
-                    label="Professor"
-                    style={{ backgroundColor: "#5A58C3", color: "#fff" }}
-                  />
-                </Stack>
-                <Typography variant="h6" style={{ paddingTop: "4px" }}>
-                  Música | Coreográfo/Professor
-                </Typography>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardContent>
-                <img
-                  alt="Fundo Colorido"
-                  src={
-                    "https://s1.1zoom.me/prev/582/Texture_581784_600x400.jpg"
-                  }
-                  width="300px"
-                  height="150px"
-                ></img>
-                <Stack direction="row" spacing={1}>
-                  <Chip
-                    label="Nível Básico"
-                    style={{ backgroundColor: "#5A0089", color: "#fff" }}
-                  />
-                  <Chip
-                    label="Ritmo"
-                    style={{ backgroundColor: "#5AB4FF", color: "#fff" }}
-                  />
-                  <Chip
-                    label="Professor"
-                    style={{ backgroundColor: "#5A58C3", color: "#fff" }}
-                  />
-                </Stack>
-                <Typography variant="h6" style={{ paddingTop: "4px" }}>
-                  Música | Coreográfo/Professor
-                </Typography>
-              </CardContent>
-            </Card>
+            <Thumbnail link="https://i.ibb.co/gTqz6Jg/dance-time-stylish-men-woman-dancing-hip-hop-bright-clothes-green-background-dance-hall-neon-light-1.jpg"></Thumbnail>
+            <Thumbnail link="https://i.ibb.co/0fDNxdB/Pretty-woman-practising-hip-hop-dance-in-studio.jpg"></Thumbnail>
+            <Thumbnail link="https://i.ibb.co/98cyc2t/young-beautiful-girl-dancing-hip-hop-street-style-isolated-studio-155003-13483.jpg"></Thumbnail>
+            <Thumbnail link="https://i.ibb.co/0fDNxdB/Pretty-woman-practising-hip-hop-dance-in-studio.jpg"></Thumbnail>
           </Stack>
         </Belly>
       </Body>

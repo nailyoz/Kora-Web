@@ -1,18 +1,17 @@
 import React from "react";
 import { Menu } from "../../Components/Menu/Menu";
 import {
-  Button,
   styled,
   Typography,
   Card,
+  CardActionArea,
   CardContent,
   Chip,
   Stack,
   Paper,
 } from "@mui/material";
 import { Rodape } from "../../Components/Rodape/Rodape";
-
-import { ChevronLeft, ChevronRight } from "@mui/icons-material";
+import RowThumbnail from "../../Components/Thumbnail/RowThumbnail";
 
 const Root = styled("div")(() => ({
   display: "flex",
@@ -45,14 +44,6 @@ const Feet = styled("div")(() => ({
   alignItems: "center",
 }));
 
-const Container = styled("div")(({ theme }) => ({
-  display: "flex",
-  flexDirection: "row",
-  padding: theme.spacing(2),
-  marginTop: theme.spacing(2),
-  marginBottom: theme.spacing(2),
-}));
-
 const CustomPaper = styled(Paper)(({ theme }) => ({
   backgroundColor: "white",
   display: "flex",
@@ -64,13 +55,6 @@ const CustomPaper = styled(Paper)(({ theme }) => ({
   paddingRight: theme.spacing(2),
 }));
 
-const CustomButtom = styled(Button)(({ theme }) => ({
-  backgroundColor: "#E9C8FA",
-  margin: theme.spacing(2),
-  marginTop: theme.spacing(5),
-  marginBottom: theme.spacing(5),
-}));
-
 export function PaginaDescobrir() {
   return (
     <Root>
@@ -78,13 +62,14 @@ export function PaginaDescobrir() {
         <Menu></Menu>
       </div>
       <Header>
-        <Typography variant="h3" style={{ fontWeight: "bold" }}>
+        <Typography variant="h4" style={{ fontWeight: "bold", fontFamily:"Gotham", }}>
           Descobrir
         </Typography>
         <div
           style={{ display: "flex", flexDirection: "row", marginTop: "24px" }}
         >
           <Card>
+            <CardActionArea>
             <CardContent>
               <Typography
                 variant="h5"
@@ -92,37 +77,40 @@ export function PaginaDescobrir() {
                   fontWeight: "bold",
                   marginBottom: "18px",
                   fontStyle: "italic",
+                  fontFamily:"Outfit",
                 }}
               >
                 Mais Vista
               </Typography>
               <img
-                alt="Fundo Colorido"
-                src={"https://s1.1zoom.me/prev/582/Texture_581784_600x400.jpg"}
+                alt="Thumbnail"
+                src={"https://i.ibb.co/gTqz6Jg/dance-time-stylish-men-woman-dancing-hip-hop-bright-clothes-green-background-dance-hall-neon-light-1.jpg"}
                 width="400px"
                 height="200px"
+                style={{objectFit: "cover",}}
               ></img>
               <Stack direction="row" spacing={1}>
                 <Chip
-                  label="Nível Básico"
+                  label="Intermediário"
                   style={{ backgroundColor: "#5A0089", color: "#fff" }}
                 />
                 <Chip
-                  label="Ritmo"
+                  label="K-pop"
                   style={{ backgroundColor: "#5AB4FF", color: "#fff" }}
                 />
                 <Chip
-                  label="Professor"
+                  label="Julia Neves"
                   style={{ backgroundColor: "#5A58C3", color: "#fff" }}
                 />
               </Stack>
-              <Typography variant="h6" style={{ paddingTop: "4px" }}>
-                Música | Coreográfo/Professor
+              <Typography variant="h6" style={{ paddingTop: "4px", fontFamily: "Outfit", fontWeight: "bold", }}>
+                Savage - AESPA  | Ensinado por Julia Neves
               </Typography>
             </CardContent>
+            </CardActionArea>
           </Card>
           <div style={{ marginLeft: "35px", marginRight: "35px" }}></div>
-          <Card>
+          <Card style={{ alignItems: "center" }}>
             <CardContent>
               <Typography
                 variant="h5"
@@ -130,549 +118,44 @@ export function PaginaDescobrir() {
                   fontWeight: "bold",
                   marginBottom: "18px",
                   fontStyle: "italic",
+                  fontFamily: "Outfit",
                 }}
               >
-                Mais Vista
+                Novidade
               </Typography>
               <img
-                alt="Fundo Colorido"
-                src={"https://s1.1zoom.me/prev/582/Texture_581784_600x400.jpg"}
+                alt="Thumbnail"
+                src={"https://i.ibb.co/MfMXqXh/young-beautiful-man-dancing-hip-hop-street-style-isolated-studio-155003-13481.jpg"}
                 width="400px"
                 height="200px"
+                style={{objectFit: "cover",}}
               ></img>
               <Stack direction="row" spacing={1}>
                 <Chip
-                  label="Nível Básico"
+                  label="Básico"
                   style={{ backgroundColor: "#5A0089", color: "#fff" }}
                 />
                 <Chip
-                  label="Ritmo"
+                  label="Hip-hop"
                   style={{ backgroundColor: "#5AB4FF", color: "#fff" }}
                 />
                 <Chip
-                  label="Professor"
+                  label="João Luís"
                   style={{ backgroundColor: "#5A58C3", color: "#fff" }}
                 />
               </Stack>
-              <Typography variant="h6" style={{ paddingTop: "4px" }}>
-                Música | Coreográfo/Professor
+              <Typography variant="h6" style={{ paddingTop: "4px", fontFamily: "Outfit", fontWeight: "bold", fontSize: "18px"}}>
+                  Windows - Kamaiyah  | Coreografia por João Luís
               </Typography>
             </CardContent>
           </Card>
         </div>
       </Header>
       <Body>
-        <Typography variant="h5" style={{ fontWeight: "bold" }}>
-          As Mais Vistas
-        </Typography>
-        <Container>
-          <CustomButtom>
-            <ChevronLeft />
-          </CustomButtom>
-          <Stack direction="row" spacing={2}>
-            <Card>
-              <CardContent>
-                <Typography
-                  variant="h5"
-                  style={{
-                    fontWeight: "bold",
-                    marginBottom: "18px",
-                    fontStyle: "italic",
-                  }}
-                >
-                  Mais Vista
-                </Typography>
-                <img
-                  alt="Fundo Colorido"
-                  src={
-                    "https://s1.1zoom.me/prev/582/Texture_581784_600x400.jpg"
-                  }
-                  width="300px"
-                  height="150px"
-                ></img>
-                <Stack direction="row" spacing={1}>
-                  <Chip
-                    label="Nível Básico"
-                    style={{ backgroundColor: "#5A0089", color: "#fff" }}
-                  />
-                  <Chip
-                    label="Ritmo"
-                    style={{ backgroundColor: "#5AB4FF", color: "#fff" }}
-                  />
-                  <Chip
-                    label="Professor"
-                    style={{ backgroundColor: "#5A58C3", color: "#fff" }}
-                  />
-                </Stack>
-                <Typography variant="h6" style={{ paddingTop: "4px" }}>
-                  Música | Coreográfo/Professor
-                </Typography>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardContent>
-                <Typography
-                  variant="h5"
-                  style={{
-                    fontWeight: "bold",
-                    marginBottom: "18px",
-                    fontStyle: "italic",
-                  }}
-                >
-                  Mais Vista
-                </Typography>
-                <img
-                  alt="Fundo Colorido"
-                  src={
-                    "https://s1.1zoom.me/prev/582/Texture_581784_600x400.jpg"
-                  }
-                  width="300px"
-                  height="150px"
-                ></img>
-                <Stack direction="row" spacing={1}>
-                  <Chip
-                    label="Nível Básico"
-                    style={{ backgroundColor: "#5A0089", color: "#fff" }}
-                  />
-                  <Chip
-                    label="Ritmo"
-                    style={{ backgroundColor: "#5AB4FF", color: "#fff" }}
-                  />
-                  <Chip
-                    label="Professor"
-                    style={{ backgroundColor: "#5A58C3", color: "#fff" }}
-                  />
-                </Stack>
-                <Typography variant="h6" style={{ paddingTop: "4px" }}>
-                  Música | Coreográfo/Professor
-                </Typography>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardContent>
-                <Typography
-                  variant="h5"
-                  style={{
-                    fontWeight: "bold",
-                    marginBottom: "18px",
-                    fontStyle: "italic",
-                  }}
-                >
-                  Mais Vista
-                </Typography>
-                <img
-                  alt="Fundo Colorido"
-                  src={
-                    "https://s1.1zoom.me/prev/582/Texture_581784_600x400.jpg"
-                  }
-                  width="300px"
-                  height="150px"
-                ></img>
-                <Stack direction="row" spacing={1}>
-                  <Chip
-                    label="Nível Básico"
-                    style={{ backgroundColor: "#5A0089", color: "#fff" }}
-                  />
-                  <Chip
-                    label="Ritmo"
-                    style={{ backgroundColor: "#5AB4FF", color: "#fff" }}
-                  />
-                  <Chip
-                    label="Professor"
-                    style={{ backgroundColor: "#5A58C3", color: "#fff" }}
-                  />
-                </Stack>
-                <Typography variant="h6" style={{ paddingTop: "4px" }}>
-                  Música | Coreográfo/Professor
-                </Typography>
-              </CardContent>
-            </Card>
-          </Stack>
-          <CustomButtom>
-            <ChevronRight />
-          </CustomButtom>
-        </Container>
-        <Container>
-          <CustomButtom>
-            <ChevronLeft />
-          </CustomButtom>
-          <Stack direction="row" spacing={2}>
-            <Card>
-              <CardContent>
-                <Typography
-                  variant="h5"
-                  style={{
-                    fontWeight: "bold",
-                    marginBottom: "18px",
-                    fontStyle: "italic",
-                  }}
-                >
-                  Mais Vista
-                </Typography>
-                <img
-                  alt="Fundo Colorido"
-                  src={
-                    "https://s1.1zoom.me/prev/582/Texture_581784_600x400.jpg"
-                  }
-                  width="300px"
-                  height="150px"
-                ></img>
-                <Stack direction="row" spacing={1}>
-                  <Chip
-                    label="Nível Básico"
-                    style={{ backgroundColor: "#5A0089", color: "#fff" }}
-                  />
-                  <Chip
-                    label="Ritmo"
-                    style={{ backgroundColor: "#5AB4FF", color: "#fff" }}
-                  />
-                  <Chip
-                    label="Professor"
-                    style={{ backgroundColor: "#5A58C3", color: "#fff" }}
-                  />
-                </Stack>
-                <Typography variant="h6" style={{ paddingTop: "4px" }}>
-                  Música | Coreográfo/Professor
-                </Typography>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardContent>
-                <Typography
-                  variant="h5"
-                  style={{
-                    fontWeight: "bold",
-                    marginBottom: "18px",
-                    fontStyle: "italic",
-                  }}
-                >
-                  Mais Vista
-                </Typography>
-                <img
-                  alt="Fundo Colorido"
-                  src={
-                    "https://s1.1zoom.me/prev/582/Texture_581784_600x400.jpg"
-                  }
-                  width="300px"
-                  height="150px"
-                ></img>
-                <Stack direction="row" spacing={1}>
-                  <Chip
-                    label="Nível Básico"
-                    style={{ backgroundColor: "#5A0089", color: "#fff" }}
-                  />
-                  <Chip
-                    label="Ritmo"
-                    style={{ backgroundColor: "#5AB4FF", color: "#fff" }}
-                  />
-                  <Chip
-                    label="Professor"
-                    style={{ backgroundColor: "#5A58C3", color: "#fff" }}
-                  />
-                </Stack>
-                <Typography variant="h6" style={{ paddingTop: "4px" }}>
-                  Música | Coreográfo/Professor
-                </Typography>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardContent>
-                <Typography
-                  variant="h5"
-                  style={{
-                    fontWeight: "bold",
-                    marginBottom: "18px",
-                    fontStyle: "italic",
-                  }}
-                >
-                  Mais Vista
-                </Typography>
-                <img
-                  alt="Fundo Colorido"
-                  src={
-                    "https://s1.1zoom.me/prev/582/Texture_581784_600x400.jpg"
-                  }
-                  width="300px"
-                  height="150px"
-                ></img>
-                <Stack direction="row" spacing={1}>
-                  <Chip
-                    label="Nível Básico"
-                    style={{ backgroundColor: "#5A0089", color: "#fff" }}
-                  />
-                  <Chip
-                    label="Ritmo"
-                    style={{ backgroundColor: "#5AB4FF", color: "#fff" }}
-                  />
-                  <Chip
-                    label="Professor"
-                    style={{ backgroundColor: "#5A58C3", color: "#fff" }}
-                  />
-                </Stack>
-                <Typography variant="h6" style={{ paddingTop: "4px" }}>
-                  Música | Coreográfo/Professor
-                </Typography>
-              </CardContent>
-            </Card>
-          </Stack>
-          <CustomButtom>
-            <ChevronRight />
-          </CustomButtom>
-        </Container>
-        <Container>
-          <CustomButtom>
-            <ChevronLeft />
-          </CustomButtom>
-          <Stack direction="row" spacing={2}>
-            <Card>
-              <CardContent>
-                <Typography
-                  variant="h5"
-                  style={{
-                    fontWeight: "bold",
-                    marginBottom: "18px",
-                    fontStyle: "italic",
-                  }}
-                >
-                  Mais Vista
-                </Typography>
-                <img
-                  alt="Fundo Colorido"
-                  src={
-                    "https://s1.1zoom.me/prev/582/Texture_581784_600x400.jpg"
-                  }
-                  width="300px"
-                  height="150px"
-                ></img>
-                <Stack direction="row" spacing={1}>
-                  <Chip
-                    label="Nível Básico"
-                    style={{ backgroundColor: "#5A0089", color: "#fff" }}
-                  />
-                  <Chip
-                    label="Ritmo"
-                    style={{ backgroundColor: "#5AB4FF", color: "#fff" }}
-                  />
-                  <Chip
-                    label="Professor"
-                    style={{ backgroundColor: "#5A58C3", color: "#fff" }}
-                  />
-                </Stack>
-                <Typography variant="h6" style={{ paddingTop: "4px" }}>
-                  Música | Coreográfo/Professor
-                </Typography>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardContent>
-                <Typography
-                  variant="h5"
-                  style={{
-                    fontWeight: "bold",
-                    marginBottom: "18px",
-                    fontStyle: "italic",
-                  }}
-                >
-                  Mais Vista
-                </Typography>
-                <img
-                  alt="Fundo Colorido"
-                  src={
-                    "https://s1.1zoom.me/prev/582/Texture_581784_600x400.jpg"
-                  }
-                  width="300px"
-                  height="150px"
-                ></img>
-                <Stack direction="row" spacing={1}>
-                  <Chip
-                    label="Nível Básico"
-                    style={{ backgroundColor: "#5A0089", color: "#fff" }}
-                  />
-                  <Chip
-                    label="Ritmo"
-                    style={{ backgroundColor: "#5AB4FF", color: "#fff" }}
-                  />
-                  <Chip
-                    label="Professor"
-                    style={{ backgroundColor: "#5A58C3", color: "#fff" }}
-                  />
-                </Stack>
-                <Typography variant="h6" style={{ paddingTop: "4px" }}>
-                  Música | Coreográfo/Professor
-                </Typography>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardContent>
-                <Typography
-                  variant="h5"
-                  style={{
-                    fontWeight: "bold",
-                    marginBottom: "18px",
-                    fontStyle: "italic",
-                  }}
-                >
-                  Mais Vista
-                </Typography>
-                <img
-                  alt="Fundo Colorido"
-                  src={
-                    "https://s1.1zoom.me/prev/582/Texture_581784_600x400.jpg"
-                  }
-                  width="300px"
-                  height="150px"
-                ></img>
-                <Stack direction="row" spacing={1}>
-                  <Chip
-                    label="Nível Básico"
-                    style={{ backgroundColor: "#5A0089", color: "#fff" }}
-                  />
-                  <Chip
-                    label="Ritmo"
-                    style={{ backgroundColor: "#5AB4FF", color: "#fff" }}
-                  />
-                  <Chip
-                    label="Professor"
-                    style={{ backgroundColor: "#5A58C3", color: "#fff" }}
-                  />
-                </Stack>
-                <Typography variant="h6" style={{ paddingTop: "4px" }}>
-                  Música | Coreográfo/Professor
-                </Typography>
-              </CardContent>
-            </Card>
-          </Stack>
-          <CustomButtom>
-            <ChevronRight />
-          </CustomButtom>
-        </Container>
-        <Container>
-          <CustomButtom>
-            <ChevronLeft />
-          </CustomButtom>
-          <Stack direction="row" spacing={2}>
-            <Card>
-              <CardContent>
-                <Typography
-                  variant="h5"
-                  style={{
-                    fontWeight: "bold",
-                    marginBottom: "18px",
-                    fontStyle: "italic",
-                  }}
-                >
-                  Mais Vista
-                </Typography>
-                <img
-                  alt="Fundo Colorido"
-                  src={
-                    "https://s1.1zoom.me/prev/582/Texture_581784_600x400.jpg"
-                  }
-                  width="300px"
-                  height="150px"
-                ></img>
-                <Stack direction="row" spacing={1}>
-                  <Chip
-                    label="Nível Básico"
-                    style={{ backgroundColor: "#5A0089", color: "#fff" }}
-                  />
-                  <Chip
-                    label="Ritmo"
-                    style={{ backgroundColor: "#5AB4FF", color: "#fff" }}
-                  />
-                  <Chip
-                    label="Professor"
-                    style={{ backgroundColor: "#5A58C3", color: "#fff" }}
-                  />
-                </Stack>
-                <Typography variant="h6" style={{ paddingTop: "4px" }}>
-                  Música | Coreográfo/Professor
-                </Typography>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardContent>
-                <Typography
-                  variant="h5"
-                  style={{
-                    fontWeight: "bold",
-                    marginBottom: "18px",
-                    fontStyle: "italic",
-                  }}
-                >
-                  Mais Vista
-                </Typography>
-                <img
-                  alt="Fundo Colorido"
-                  src={
-                    "https://s1.1zoom.me/prev/582/Texture_581784_600x400.jpg"
-                  }
-                  width="300px"
-                  height="150px"
-                ></img>
-                <Stack direction="row" spacing={1}>
-                  <Chip
-                    label="Nível Básico"
-                    style={{ backgroundColor: "#5A0089", color: "#fff" }}
-                  />
-                  <Chip
-                    label="Ritmo"
-                    style={{ backgroundColor: "#5AB4FF", color: "#fff" }}
-                  />
-                  <Chip
-                    label="Professor"
-                    style={{ backgroundColor: "#5A58C3", color: "#fff" }}
-                  />
-                </Stack>
-                <Typography variant="h6" style={{ paddingTop: "4px" }}>
-                  Música | Coreográfo/Professor
-                </Typography>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardContent>
-                <Typography
-                  variant="h5"
-                  style={{
-                    fontWeight: "bold",
-                    marginBottom: "18px",
-                    fontStyle: "italic",
-                  }}
-                >
-                  Mais Vista
-                </Typography>
-                <img
-                  alt="Fundo Colorido"
-                  src={
-                    "https://s1.1zoom.me/prev/582/Texture_581784_600x400.jpg"
-                  }
-                  width="300px"
-                  height="150px"
-                ></img>
-                <Stack direction="row" spacing={1}>
-                  <Chip
-                    label="Nível Básico"
-                    style={{ backgroundColor: "#5A0089", color: "#fff" }}
-                  />
-                  <Chip
-                    label="Ritmo"
-                    style={{ backgroundColor: "#5AB4FF", color: "#fff" }}
-                  />
-                  <Chip
-                    label="Professor"
-                    style={{ backgroundColor: "#5A58C3", color: "#fff" }}
-                  />
-                </Stack>
-                <Typography variant="h6" style={{ paddingTop: "4px" }}>
-                  Música | Coreográfo/Professor
-                </Typography>
-              </CardContent>
-            </Card>
-          </Stack>
-          <CustomButtom>
-            <ChevronRight />
-          </CustomButtom>
-        </Container>
+        <RowThumbnail titulo="Descubra: As Mais Vistas"></RowThumbnail>
+        <RowThumbnail titulo="Descubra: Novos Ritmos"></RowThumbnail>
+        <RowThumbnail titulo="Descubra: Novos Professores"></RowThumbnail>
+        <RowThumbnail titulo="Subindo de nível!"></RowThumbnail>
 
         <Feet>
           <CustomPaper>

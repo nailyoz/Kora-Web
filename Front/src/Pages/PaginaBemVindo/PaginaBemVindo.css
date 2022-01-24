@@ -1,0 +1,9 @@
+.imagem{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+}
+.imagem2{
+    background-image: url('https://i.ibb.co/B2xWv28/Dance-time-Stylish-men-and-woman-dancing-hip-hop-in-bright-clothes-on-green-background-at-dance-hall.jpg');
+
+}

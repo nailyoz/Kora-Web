@@ -3,6 +3,7 @@ import { styled, Typography, Button, Stack, Paper } from "@mui/material";
 import { RoundedChip } from "../../Components/RoundedChip";
 import { Rodape } from "../../Components/Rodape/Rodape";
 import marca from "../../shared/img/marca.png";
+//import { createTheme, ThemeProvider } from "@material-ui/core/styles";
 
 const Header = styled("div")(() => ({
   display: "flex",
@@ -15,6 +16,7 @@ const Header = styled("div")(() => ({
 
 const Neck = styled("div")(() => ({
   display: "flex",
+  position: "relative",
   flexDirection: "row",
   alignItems: "center",
   justifyContent: "center",
@@ -36,7 +38,7 @@ const Belly = styled("div")(() => ({
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
-  marginTop: "48px",
+  marginTop: "100px",
 }));
 
 const Feet = styled("div")(() => ({
@@ -56,107 +58,140 @@ const CustomButtom = styled("div")(() => ({
   borderRadius: "20px",
 }));
 
-const RightDivWelcome = styled("div")(({ theme }) => ({
-  display: "flex",
-  flexDirection: "column",
-  width: "500px",
-  alignItems: "flex-start",
-  justifyContent: "flex-start",
-  padding: theme.spacing(3),
-}));
-
 const Container = styled("div")(({ theme }) => ({
-  display: "flex",
-  flexDirection: "row",
-  justifyContent: "space-between",
-  padding: theme.spacing(5),
-  paddingLeft: theme.spacing(10),
-  paddingRight: theme.spacing(10),
-  marginTop: theme.spacing(3),
+  display: "grid",
+  gridRowGap: "100px",
+  gridColumnGap: "100px",
+  gridTemplateColumns: "auto 400px 400px auto",
+  gridTemplateRows: "400px 500px",
 }));
 
 const Item = styled(Paper)(({ theme }) => ({
   padding: theme.spacing(1),
 }));
 
+
+
+
 export function PaginaBemVindo() {
   return (
     <Root>
       <Header>
-        <img alt="Kora-mark" src={marca} width="125px" height="45px"></img>
+        <img alt="Kora-mark" src={marca} height="60px"></img>
         <CustomButtom>Login</CustomButtom>
-      </Header>
+      </Header>     
       <Neck>
-        <img
-          alt="Dançarino"
-          src={"https://images4.alphacoders.com/772/thumb-1920-77238.jpg"}
-          width="100%"
-          height="600px"
+      <img
+            alt="Dançarina de ballet no ar"
+            src={"https://i.ibb.co/K7kgrdk/High-above-Young-and-graceful-ballet-dancer-on-pink-studio-background-in-neon-light-Art-motion-actio.jpg"}
+            height="450px"
+            width="100%"
+            
         ></img>
+         <Button
+            size="large"
+            sx={{
+              backgroundColor: "white",
+              color: "#5A0089FF",
+              width: "250px",
+              height: "50px",
+              borderRadius: "25px",
+              position: "absolute",
+              bottom: "0",
+              margin: "10px",
+            }}
+          >
+            Junte-se ao Kora!
+          </Button>
       </Neck>
       <Body>
         <Container>
           <img
-            alt="Fundo Colorido 600x400"
-            src={"https://s1.1zoom.me/prev/582/Texture_581784_600x400.jpg"}
-            height="400px"
-            width="400px"
+            style={{
+              gridRow: "1 / 3",
+              gridColumn: "2 / 3",
+              height: "400px",
+              width: "100%",
+              objectFit: "cover",
+            }}
+            alt="Imagem de dança"
+            src={"https://i.ibb.co/B2xWv28/Dance-time-Stylish-men-and-woman-dancing-hip-hop-in-bright-clothes-on-green-background-at-dance-hall.jpg"}
+            
           ></img>
-          <RightDivWelcome>
-            <Typography
-              variant="h3"
-              component="div"
-              gutterBottom
-              sx={{ fontWeight: "bold" }}
-            >
-              Bem-vindo ao KORA
-            </Typography>
-            <Typography variant="h6" gutterBottom sx={{ marginBottom: "50px" }}>
-              Somos a maior plataforma online especializada em dança. Nascida
-              online, nos dedicamos a te guiar e aprimorar suas técnicas de
-              dança, quando você quiser e no conforto da sua casa! Com um
-              serviço amplo e exclusivo, realizaremos juntos a sua transformação
-              em um excelente dançarino!
-            </Typography>
-            <div
+            <div style={{
+            gridRow: "1 / 2",
+            gridColumn: "3 / 4",
+            position: "relative",
+            }}>
+              <Typography
+                variant="h3"
+                component="div"
+                gutterBottom
+                style={{ fontSize: "3rem", fontWeight: "bold", fontFamily:"Gotham, Outfit", }}
+                >
+                Bem-vindo ao KORA
+              </Typography>
+              <Typography variant="h6" gutterBottom sx={{ marginBottom: "50px", fontSize:"16px", fontFamily:"Outfit"}}>
+                Somos a maior plataforma online especializada em dança. Nascida
+                online, nos dedicamos a te guiar e aprimorar suas técnicas de
+                dança, quando você quiser e no conforto da sua casa! Com um
+                serviço amplo e exclusivo, realizaremos juntos a sua transformação
+                em um excelente dançarino!
+              </Typography>
+              <div
               style={{
-                height: "20px",
-                width: "500px",
+                height: "60px",
+                width: "100%",
                 backgroundColor: "#5A0089FF",
+                position: "absolute",
+                bottom: "0",
               }}
-            ></div>
-          </RightDivWelcome>
-        </Container>
+              ></div>
+            </div>
 
-        <Container>
-          <img
-            alt="Fundo Colorido 600x400"
-            src={"https://s1.1zoom.me/prev/582/Texture_581784_600x400.jpg"}
-            height="400px"
-            width="400px"
-          ></img>
-          <RightDivWelcome>
             <img
-              alt="Fundo Colorido 600x400"
-              src={"https://s1.1zoom.me/prev/582/Texture_581784_600x400.jpg"}
-              height="200px"
-              width="400px"
-            ></img>
-            <Typography variant="h5">
-              Aqui o mundo de dança se transforma e te traz junto com ele, faça
-              parte dessa família!
-            </Typography>
-            <div
+              style={{
+              gridRow: "2 / 3",
+              gridColumn: "2 / 3",
+              height: "500px",
+              width: "100%",
+              objectFit: "cover",
+              }}
+            alt="Imagem de dança"
+            src={"https://i.ibb.co/L6GXQPZ/Young-beautiful-man-and-woman-dancing-hip-hop-street-style-isolated-on-studio-background-in-colorful.jpg"}
+          ></img>
+
+           <div style={{
+            gridRow: "2 / 3",
+            gridColumn: "3 / 4",
+            position: "relative",
+            }}>
+                <img
+                style={{
+                height: "300px",
+                width: "100%",
+                objectFit: "cover",
+                marginBottom: "50px",
+                }}
+                alt="Imagem de dança"
+                src={"https://i.ibb.co/GC15Jg1/Beautiful-sportive-girls-dancing-hip-hop-in-stylish-clothes-on-colorful-gradient-studio-background-i.jpg"}
+              ></img>
+              <Typography variant="h5" sx={{ fontSize:"16px", fontFamily:"Outfit"}}>
+                Aqui o mundo de dança se transforma e te traz junto com ele, faça
+                parte dessa família!
+              </Typography>
+              <div
               style={{
                 display: "flex",
                 flexDirection: "row",
-                marginTop: "48px",
+                position: "absolute",
+                bottom: "0",
               }}
             >
               <div
                 style={{
-                  backgroundColor: "#C4C4C4",
-                  width: "50px",
+                  backgroundColor: "#5A0089FF",
+                  width: "30px",
                   height: "50px",
                 }}
               ></div>
@@ -164,13 +199,15 @@ export function PaginaBemVindo() {
                 variant="h4"
                 component="div"
                 gutterBottom
-                style={{ fontWeight: "bold", marginLeft: "16px" }}
+                style={{ fontWeight: "bold", marginLeft: "16px", fontFamily:"Gotham", }}
               >
-                Tudo em seu Ritmo
+                Tudo em seu Ritmo 
               </Typography>
             </div>
-          </RightDivWelcome>
+            </div>
+            
         </Container>
+
 
         <Belly>
           <Stack spacing={8} direction="row">
@@ -178,44 +215,44 @@ export function PaginaBemVindo() {
               <RoundedChip
                 text={"Profissionais Especializados"}
                 imgSource={
-                  "https://geekantenado.com/wp-content/uploads/2021/11/250606478_1526802584344940_5878633640115131255_n.jpg"
+                  "https://i.ibb.co/gTqz6Jg/dance-time-stylish-men-woman-dancing-hip-hop-bright-clothes-green-background-dance-hall-neon-light-1.jpg"
                 }
               />
 
               <RoundedChip
                 text={"Música e Danças Populares"}
                 imgSource={
-                  "https://geekantenado.com/wp-content/uploads/2021/11/250721574_258251386264545_9205736197552251609_n.jpg"
+                  "https://i.ibb.co/MfMXqXh/young-beautiful-man-dancing-hip-hop-street-style-isolated-studio-155003-13481.jpg"
                 }
               />
             </Item>
             <Item>
               <RoundedChip
-                text={"Profissionais Especializados"}
+                text={"Preços Acessiveis"}
                 imgSource={
-                  "https://geekantenado.com/wp-content/uploads/2021/11/250606478_1526802584344940_5878633640115131255_n.jpg"
+                  "https://i.ibb.co/s39B63G/The-young-handsome-happy-hipster-man-listening-music-with-headphones-at-black-studio-with-neon-light.jpg"
                 }
               />
 
               <RoundedChip
-                text={"Música e Danças Populares"}
+                text={"Vários Ritmos"}
                 imgSource={
-                  "https://geekantenado.com/wp-content/uploads/2021/11/250721574_258251386264545_9205736197552251609_n.jpg"
+                  "https://i.ibb.co/Jqmpk4Y/Beautiful-sportive-girl-dancing-hip-hop-in-stylish-clothes-on-colorful-gradient-background-at-dance.jpg"
                 }
               />
             </Item>
             <Item>
               <RoundedChip
-                text={"Profissionais Especializados"}
+                text={"Conteúdo Exclusivo"}
                 imgSource={
-                  "https://geekantenado.com/wp-content/uploads/2021/11/250606478_1526802584344940_5878633640115131255_n.jpg"
+                  "https://i.ibb.co/ygD55sk/boy-girl-dancing-hip-hop-stylish-clothes-gradient-background-dance-hall-neon-light-155003-9254.jpg"
                 }
               />
 
               <RoundedChip
-                text={"Música e Danças Populares"}
+                text={"Comunicação e Suporte"}
                 imgSource={
-                  "https://geekantenado.com/wp-content/uploads/2021/11/250721574_258251386264545_9205736197552251609_n.jpg"
+                  "https://i.ibb.co/R4DCsWJ/Design-sem-nome.png"
                 }
               />
             </Item>

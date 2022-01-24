@@ -20,6 +20,7 @@ export function RoundedChip(props) {
           width: "200px",
           height: "200px",
           borderRadius: "200px",
+          objectFit: "cover",
         }}
       ></img>
       <Typography variant="h4" align="center" sx={{ marginTop: "8px" }}>
